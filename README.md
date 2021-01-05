@@ -27,5 +27,8 @@ These steps will install MySQL, Wordpress, Nginx and Certbot for automatic SSL c
    c. Add `define( 'FS_METHOD', 'direct' )` at the bottom of the file and save it,
    d. Change ownership of wordpress installation directory to allow making file modifications `chmod -R www-data:www-data /var/www`
 6. Exit the shell with the command `exit`
-7. Shut down your containers and restart to effect above changes `docker-compose down && docker-compose up -d`
+7. Shut down your containers and restart to effect above changes
+
+   `docker-compose down && docker-compose up -d`
+
 8. Now open `your-server-ip:3400` or `your-domain.com` on a browser to access your wordpress website and to set it up.
